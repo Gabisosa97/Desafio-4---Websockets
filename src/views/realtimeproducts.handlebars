@@ -1,0 +1,43 @@
+<h4>LISTA DE PRODUCTOS CON WEBSOCKET</h4>
+<ul id="productsList">
+  {{#each products}}
+    <li>
+      <p>Producto: {{title}} - Precio: {{price}}</p>
+    </li>
+  {{/each}}
+</ul>
+
+<form id="formulario" action="">
+  <label for="title">Producto: </label>
+  <input type="text" id="title" name="title" />
+  <label for="price">Precio: </label>
+  <input type="text" id="price" name="price" />
+  <button type="submit"> Enviar </button>
+</form>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"
+></script>
+
+<script>
+  const socket = io(); 
+  const products = document.getElementById("productsList"); const formulario =
+  document.getElementById("formulario"); formulario.addEventListener("submit",
+  function (event) { event.preventDefault(); const titleInput =
+  document.getElementById("title").value; const priceInput =
+  document.getElementById("price").value; 
+
+  const prod = {title: titleInput, price: priceInput}
+
+  const listItem = document.createElement('li'); 
+  listItem.textContent = `Producto: ${titleInput} - Precio: ${priceInput}`; 
+  products.appendChild(listItem);
+  socket.emit('cambios', prod); 
+  console.log('Listo waucho enviauu!')
+  })
+  
+  socket.on('cambios', (data) => {console.log('RECIBIDO!!!',data);
+  const listItem = document.createElement('li'); 
+  listItem.textContent = `Producto: ${data.title} - Precio: ${data.price}`; 
+  products.appendChild(listItem)});
+</script>
