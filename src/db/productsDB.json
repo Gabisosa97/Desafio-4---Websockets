@@ -1,1 +1,109 @@
-[{"id":1,"title":"Producto prueba 1","description":"Este es un producto de prueba 1","code":"acr540","price":200,"status":true,"stock":10,"category":"product","thumbnail":["D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"]},{"id":2,"title":"Producto prueba 2","description":"Este es un producto de prueba 2","code":"acr150","price":200,"status":true,"stock":10,"category":"product","thumbnail":["D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"]},{"id":3,"title":"Producto prueba 3","description":"Este es un producto de prueba 3","code":"abc123","price":200,"status":true,"stock":10,"category":"product","thumbnail":["D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"]},{"id":4,"title":"Producto prueba 4","description":"Este es un producto de prueba 4","code":"ggg50","price":200,"status":true,"stock":10,"category":"product","thumbnail":["D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"]},{"id":5,"title":"12312","price":"qweqwe"},{"id":6,"title":"asdasdfsa","price":"123123"},{"id":7,"title":"zxczx","price":"12312"},{"id":8,"title":"asdasd","price":"123123"},{"id":9,"title":"asdas","price":"123123"},{"id":10,"title":"anduvooo","price":"re piolaaa"},{"id":11,"title":"zxvc","price":"wer"},{"id":12,"title":"asd","price":"asd"}]
+[
+  {
+    "id": 1,
+    "title": "Producto prueba 1",
+    "description": "Este es un producto de prueba 1",
+    "code": "acr540",
+    "price": 200,
+    "status": true,
+    "stock": 10,
+    "category": "product",
+    "thumbnail": [
+      "D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Producto prueba 2",
+    "description": "Este es un producto de prueba 2",
+    "code": "acr150",
+    "price": 200,
+    "status": true,
+    "stock": 10,
+    "category": "product",
+    "thumbnail": [
+      "D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Producto prueba 3",
+    "description": "Este es un producto de prueba 3",
+    "code": "abc123",
+    "price": 200,
+    "status": true,
+    "stock": 10,
+    "category": "product",
+    "thumbnail": [
+      "D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Producto prueba 4",
+    "description": "Este es un producto de prueba 4",
+    "code": "ggg50",
+    "price": 200,
+    "status": true,
+    "stock": 10,
+    "category": "product",
+    "thumbnail": [
+      "D:\\Descargas\\Seba\\Proyects\\curso-backend-coderhouse\\backend-coderhouse\\src\\public\\img\\producto.webp"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "12312",
+    "price": "qweqwe"
+  },
+  {
+    "id": 6,
+    "title": "asdasdfsa",
+    "price": "123123"
+  },
+  {
+    "id": 7,
+    "title": "zxczx",
+    "price": "12312"
+  },
+  {
+    "id": 8,
+    "title": "asdasd",
+    "price": "123123"
+  },
+  {
+    "id": 9,
+    "title": "asdas",
+    "price": "123123"
+  },
+  {
+    "id": 10,
+    "title": "anduvooo",
+    "price": "re piolaaa"
+  },
+  {
+    "id": 11,
+    "title": "zxvc",
+    "price": "wer"
+  },
+  {
+    "id": 12,
+    "title": "asd",
+    "price": "asd"
+  },
+  {
+    "id": 13,
+    "title": "asd",
+    "price": "asd"
+  },
+  {
+    "id": 14,
+    "title": "asdasd",
+    "price": "23234"
+  },
+  {
+    "id": 15,
+    "title": "asdas",
+    "price": "asdasd"
+  }
+]

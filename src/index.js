@@ -13,7 +13,7 @@ const app = express();
 const httpServer = app.listen(PORT, () =>
   console.log(`Listening on localhost:${PORT}`)
 );
-const viewsPath = resolve("./views");
+const viewsPath = resolve("./src/views");
 
 app.engine(
   "handlebars",
@@ -26,7 +26,7 @@ const socketServer = new Server(httpServer);
 
 app.set("views", viewsPath);
 app.set("view engine", "handlebars");
-app.use(express.static(viewsPath + "/public"));
+app.use(express.static(viewsPath + "/src/public"));
 
 //MIDDLEWARE REQ.QUERY
 app.use(express.json());

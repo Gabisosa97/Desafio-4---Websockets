@@ -5,7 +5,7 @@ class CartManager {
 
   constructor() {
     this.#cartId = 0;
-    this.path = "./db/cartsDB.json";
+    this.path = "./src/db/cartsDB.json";
   }
 
   async getCarts() {

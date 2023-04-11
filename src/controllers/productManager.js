@@ -6,7 +6,7 @@ class ProductManager {
 
   constructor() {
     this.#products = [];
-    this.path = "./db/productsDB.json";
+    this.path = "./src/db/productsDB.json";
   }
 
   async loadData() {
@@ -45,7 +45,10 @@ class ProductManager {
       //Retornar el producto y asignarle una autoID con spread operator.
       arrayProducts.push({ id: ++this.idProduct, ...newProduct });
 
-      await fs.promises.writeFile(this.path, JSON.stringify(arrayProducts));
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(arrayProducts, null, 2)
+      );
     } catch (error) {
       console.log(error);
     }
@@ -70,7 +73,10 @@ class ProductManager {
       const productsParse = JSON.parse(readProducts);
       const productId = productsParse.findIndex((product) => product.id === id);
       productsParse.splice(productId, 1, { id, ...newProduct });
-      await fs.promises.writeFile(this.path, JSON.stringify(productsParse));
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(productsParse, null, 2)
+      );
       return { message: `producto modificado correctamente!` };
     } catch (e) {
       throw new Error(`ERROR, no se puede actualizar el producto!`);
@@ -85,7 +91,10 @@ class ProductManager {
       });
       const productParse = JSON.parse(readProducts);
       const deleteProduct = productParse.filter((p) => p.id !== id);
-      await fs.promises.writeFile(this.path, JSON.stringify(deleteProduct));
+      await fs.promises.writeFile(
+        this.path,
+        JSON.stringify(deleteProduct, null, 2)
+      );
       return { message: `El producto ${id} fue eliminado con exito` };
     } catch (e) {
       throw new Error(e);
